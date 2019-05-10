@@ -1,4 +1,5 @@
 import React from 'react';
+import ToyProblem1 from './components/ToyProblem1';
 
 import './App.css';
 
@@ -7,10 +8,12 @@ function App() {
     <div className='App'>
       <header className='App-header'>
         <h1> Playground </h1>
+        <div />
       </header>
       <body className='contentBox'>
         <div className='box'>
           <h2>box1</h2>
+          <ToyProblem1 />
         </div>
         <div className='box'>
           <h2>box2</h2>

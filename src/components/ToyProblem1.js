@@ -1,29 +1,41 @@
 import React, { Component } from 'react';
+import '../App.css';
 
 class ToyProblem1 extends Component {
   constructor() {
     super();
-    this.state = {};
+    this.state = {
+      count: 0,
+      value: ''
+    };
   }
-  getCount(str) {
+  handleChange(event) {
+    this.setState({ value: event.target.value });
+  }
+  getCount = event => {
     var vowelsCount = 0;
 
-    vowelsCount = str.match(/[aeiou]/g);
-    console.log(vowelsCount == null ? 0 : vowelsCount.length);
-    return vowelsCount == null ? 0 : vowelsCount.length;
-  }
+    vowelsCount = this.state.value.match(/[aeiou]/g);
+
+    this.setState({
+      count: vowelsCount == null ? 0 : vowelsCount.length
+    });
+    event.preventDefault();
+  };
 
   render() {
     return (
       <div>
-        <h3>Vowel Counter</h3>
-        <form action=''>
-          <input type='text' />
+        <form onSubmit={event => this.getCount(event)} className='VCCont'>
           <input
-            type='submit'
-            onClick={() => this.getCount(this.target.value)}
+            type='text'
+            value={this.state.value}
+            onChange={event => this.handleChange(event)}
+            className='VCInput'
           />
+          <input type='submit' className='VCSubmit' />
         </form>
+        <h3 className='VCCount'>{this.state.count}</h3>
       </div>
     );
   }

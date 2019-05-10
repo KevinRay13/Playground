@@ -12,7 +12,7 @@ function App() {
       </header>
       <body className='contentBox'>
         <div className='box'>
-          <h2>box1</h2>
+          <h2>Vowel Counter</h2>
           <ToyProblem1 />
         </div>
         <div className='box'>

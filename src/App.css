@@ -28,7 +28,45 @@
 .box {
   width: 30em;
   height: 30em;
-  border: 3px solid #282c34;
+  border: 3px solid rgb(132, 90, 248);
+  background-color: rgba(238, 236, 236, 0.575);
   margin: 1em;
   border-radius: 10px;
+}
+.VCInput {
+  width: 70%;
+  height: 20vh;
+  border: 3px solid rgb(132, 90, 248);
+  border-radius: 10px;
+  font-size: 1.2em;
+  margin: 0 auto;
+}
+.VCCont {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.VCSubmit {
+  width: 30%;
+  height: 4vh;
+  border: 3px solid rgb(132, 90, 248);
+  border-radius: 10px;
+  font-size: 1em;
+  margin: 0 auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.VCCount {
+  font-size: 3.2em;
+  font-family: 'Fredoka One', cursive;
+  color: #413b47;
+}
+h2 {
+  color: #413b47;
+  font-family: 'Fredoka One', cursive;
+  font-size: 2.2em;
+}
+:focus {
+  outline-color: transparent;
+  outline-style: none;
 }

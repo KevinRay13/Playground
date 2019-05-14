@@ -6,6 +6,11 @@ class ToyProblem2 extends Component {
     super();
     this.state = {};
   }
+  //   function disemvowel(str) {
+  //     let newStr = str.match(/[b-d, f-h, j-n, p-t, v-z, ?!.]/gi);
+
+  //    return newStr.join('');
+  //  }
 
   render() {
     return <div />;

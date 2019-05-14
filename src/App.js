@@ -1,5 +1,6 @@
 import React from 'react';
 import ToyProblem1 from './components/ToyProblem1';
+import ToyProblem2 from './components/ToyProblem2';
 
 import './App.css';
 
@@ -16,7 +17,8 @@ function App() {
           <ToyProblem1 />
         </div>
         <div className='box'>
-          <h2>box2</h2>
+          <h2>Millenial Bot</h2>
+          <ToyProblem2 />
         </div>
         <div className='box'>
           {' '}

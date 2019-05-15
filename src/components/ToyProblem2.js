@@ -5,7 +5,8 @@ class ToyProblem2 extends Component {
   constructor() {
     super();
     this.state = {
-      value: ''
+      value: '',
+      string: ''
     };
   }
   //   function disemvowel(str) {
@@ -16,11 +17,21 @@ class ToyProblem2 extends Component {
   handleChange(event) {
     this.setState({ value: event.target.value });
   }
+  getNewString = event => {
+    var newString = '';
+
+    newString = this.state.value.match(/[b-d, f-h, j-n, p-t, v-z, ?!.]/gi);
+
+    this.setState({
+      string: newString
+    });
+    event.preventDefault();
+  };
 
   render() {
     return (
       <div>
-        <form onSubmit='' className='VCCont'>
+        <form onSubmit={event => this.getNewString(event)} className='VCCont'>
           <input
             type='text'
             value={this.state.value}
@@ -29,7 +40,7 @@ class ToyProblem2 extends Component {
           />
           <input type='submit' className='VCSubmit' />
         </form>
-        <h3 className='VCCount' />
+        <h3 className='MillenialString'>{this.state.string}</h3>
       </div>
     );
   }

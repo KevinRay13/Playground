@@ -1,6 +1,7 @@
 import React from 'react';
 import ToyProblem1 from './components/ToyProblem1';
 import ToyProblem2 from './components/ToyProblem2';
+import ToyProblem3 from './components/ToyProblem3';
 
 import './App.css';
 
@@ -22,7 +23,8 @@ function App() {
         </div>
         <div className='box'>
           {' '}
-          <h2>box3</h2>{' '}
+          <h2>TBD</h2>
+          <ToyProblem3 />
         </div>
         <div className='box'>
           {' '}

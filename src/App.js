@@ -12,7 +12,7 @@ function App() {
         <h1> Playground </h1>
         <div />
       </header>
-      <body className='contentBox'>
+      <div className='contentBox'>
         <div className='box'>
           <h2>Vowel Counter</h2>
           <ToyProblem1 />
@@ -30,7 +30,7 @@ function App() {
           {' '}
           <h2>box4</h2>
         </div>
-      </body>
+      </div>
     </div>
   );
 }

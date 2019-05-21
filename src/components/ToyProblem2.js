@@ -6,21 +6,30 @@ class ToyProblem2 extends Component {
     super();
     this.state = {
       value: '',
-      string: ''
+      string: '0'
     };
   }
-  //   function disemvowel(str) {
-  //     let newStr = str.match(/[b-d, f-h, j-n, p-t, v-z, ?!.]/gi);
+  //     function disemvowel(str) {
+  //       let newStr = str.match(/[b-d, f-h, j-n, p-t, v-z, ?!.]/gi);
 
-  //    return newStr.join('');
-  //  }
+  //      return newStr.join('');
+  //    }
   handleChange(event) {
     this.setState({ value: event.target.value });
   }
   getNewString = event => {
     var newString = '';
+    // var final = '';
 
     newString = this.state.value.match(/[b-d, f-h, j-n, p-t, v-z, ?!.]/gi);
+    // newString.split('');
+    // for (let i = 0; i < newString.length; i++) {
+    //   if (newString[i] === 'e') {
+    //     final = newString.splice(newString[i], 0, '3');
+    //     console.log('final');
+    //   }
+    // }
+    // console.log('final');
 
     this.setState({
       string: newString

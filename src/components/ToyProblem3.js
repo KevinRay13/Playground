@@ -13,20 +13,22 @@ class ToyProblem1 extends Component {
     this.setState({ value: event.target.value });
   };
   numberfy = event => {
-    var newString = '';
-    var final = '';
+    var newString = this.state.value.match(/[a-z, ?!.]/gi);
 
-    newString = this.state.value.match(/[a-z, ?!.]/gi);
     for (let i = 0; i < newString.length; i++) {
       if (newString[i] === 'e') {
-        final = newString.splice([i], 1, '3');
-
-        console.log(final);
+        newString.splice([i], 1, '3');
+      } else if (newString[i] === 'g') {
+        newString.splice([i], 1, '9');
+      } else if (newString[i] === 'i') {
+        newString.splice([i], 1, '1');
+      } else if (newString[i] === 'o') {
+        newString.splice([i], 1, '0');
       }
     }
 
     this.setState({
-      string: final
+      string: newString
     });
     event.preventDefault();
   };

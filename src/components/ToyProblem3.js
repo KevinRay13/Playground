@@ -45,7 +45,7 @@ class ToyProblem1 extends Component {
           />
           <input type='submit' className='VCSubmit' />
         </form>
-        <h3 className='VCCount'>{this.state.string}</h3>
+        <h4 className='VCCountSmall'>{this.state.string}</h4>
       </div>
     );
   }

@@ -2,6 +2,7 @@ import React from 'react';
 import ToyProblem1 from './components/ToyProblem1';
 import ToyProblem2 from './components/ToyProblem2';
 import ToyProblem3 from './components/ToyProblem3';
+import ToyProblem4 from './components/ToyProblem4';
 
 import './App.css';
 
@@ -23,12 +24,13 @@ function App() {
         </div>
         <div className='box'>
           {' '}
-          <h2>TBD</h2>
+          <h2>Numberfy</h2>
           <ToyProblem3 />
         </div>
         <div className='box'>
           {' '}
-          <h2>box4</h2>
+          <h2>Custom Buttons</h2>
+          <ToyProblem4 />
         </div>
       </div>
     </div>

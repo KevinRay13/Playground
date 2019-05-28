@@ -134,7 +134,21 @@ h2 {
   animation: bounce 1s;
   -webkit-animation: bounce 1s;
 }
-
+.callBtn {
+  padding: 0.8em 0em;
+  width: 350px;
+  background: rgb(132, 90, 248);
+  border-radius: 15px;
+  border: 2px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  font-size: 1.2em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
 @keyframes bounce {
   0% {
     border-radius: 15px;

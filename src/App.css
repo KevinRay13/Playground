@@ -140,7 +140,7 @@ h2 {
   background: rgb(132, 90, 248);
   border-radius: 15px;
   border: 2px solid rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-size: 1.2em;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
@@ -148,6 +148,41 @@ h2 {
   margin: 0 auto;
   margin-bottom: 1em;
   margin-top: 1em;
+  border: none;
+  position: relative;
+  height: 60px;
+  font-size: 1.6em;
+  padding: 0 2em;
+  cursor: pointer;
+  transition: 800ms ease all;
+  outline: none;
+}
+
+.callBtn:hover {
+  background: transparent;
+  color: rgb(132, 90, 248);
+}
+.callBtn:before,
+.callBtn:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: rgb(132, 90, 248);
+  transition: 400ms ease all;
+}
+.callBtn:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+.callBtn:hover:before,
+.callBtn:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
 }
 @keyframes bounce {
   0% {
